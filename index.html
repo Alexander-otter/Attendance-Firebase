@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SmartAttend+</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>🙋 SmartAttend+ 🕗</h1>
+
+  <!-- add -->
+  <div class="card">
+    <h2>Add Student</h2>
+    <input id="name" placeholder="Student Name">
+    <input id="course" placeholder="Course">
+    <input id="year" placeholder="Year Level">
+    <button id="addStudentBtn">Add Student</button>
+  </div>
+
+  <!-- attendance -->
+  <div class="card">
+    <h2>Mark Attendance</h2>
+    <select id="studentSelect"></select>
+    <select id="status">
+      <option>Present</option>
+      <option>Absent</option>
+      <option>Late</option>
+    </select>
+    <button id="markAttendanceBtn">Submit Attendance</button>
+  </div>
+
+  <div class="card">
+    <h2>Attendance Records</h2>
+    <ul id="attendanceList"></ul>
+  </div>
+
+  <!-- Activities -->
+  <div class="card">
+    <h2>Student Activity</h2>
+    <select id="activityStudent"></select>
+    <select id="activityType">
+      <option>Quiz</option>
+      <option>Recitation</option>
+      <option>Project</option>
+      <option>Event</option>
+    </select>
+    <input id="score" type="number" placeholder="Score">
+    <input id="maxScore" type="number" placeholder="Max Score">
+    <button id="addActivityBtn">Add Activity</button>
+  </div>
+
+  <div class="card">
+    <h2> Activity Records</h2>
+    <ul id="activityList"></ul>
+  </div>
+</div>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
